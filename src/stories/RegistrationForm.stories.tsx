@@ -14,7 +14,7 @@ type Story = StoryObj<typeof RegistrationForm>
  * to learn more about using the canvasElement to query the DOM
  */
 export const FilledForm: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     const canvas = within(canvasElement)
 
     const emailInput = canvas.getByLabelText('email', {

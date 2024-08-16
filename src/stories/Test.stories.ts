@@ -16,7 +16,7 @@ type Story = StoryObj<typeof Test>
  * to learn more about using the canvasElement to query the DOM
  */
 export const FirstStory: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     const canvas = within(canvasElement)
 
     await userEvent.type(canvas.getByTestId('an-element'), 'example-value')
@@ -24,7 +24,7 @@ export const FirstStory: Story = {
 }
 
 export const SecondStory: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     const canvas = within(canvasElement)
 
     await userEvent.type(canvas.getByTestId('other-element'), 'another value')
@@ -32,7 +32,13 @@ export const SecondStory: Story = {
 }
 
 export const CombinedStories: Story = {
-  play: async ({ context, canvasElement }) => {
+  play: async ({
+    context,
+    canvasElement,
+  }: {
+    context: any
+    canvasElement: HTMLElement
+  }) => {
     const canvas = within(canvasElement)
 
     // Runs the FirstStory and Second story play function before running this story's play function

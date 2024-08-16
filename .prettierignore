@@ -6,4 +6,8 @@ coverage
 **/*.html
 
 # Ignore other files below: 
+.github
 .prettierrc.yml
+docker-compose.yml
+Dockerfile
+Makefile

@@ -13,7 +13,7 @@ export default meta
 type Story = StoryObj<typeof ClickMe>
 
 export const ExampleStory: Story = {
-  play: async ({ canvasElement }) => {
+  play: async ({ canvasElement }: { canvasElement: HTMLElement }) => {
     // Assigns canvas to the component root element
     const canvas = within(canvasElement)
 
