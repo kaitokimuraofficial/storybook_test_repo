@@ -1,11 +1,11 @@
-interface Task {
+interface TaskType {
   id: number
   title: string
   state: string
 }
 
 export interface PropsType {
-  task: Task
+  task: TaskType
   onArchiveTask: (arg0: number) => void
   onPinTask: (arg0: number) => void
 }
