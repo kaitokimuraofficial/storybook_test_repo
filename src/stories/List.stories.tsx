@@ -1,17 +1,17 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from '@storybook/react'
 
-import { List } from "./List";
-import { ListItem } from "./ListItem";
+import { List } from './List'
+import { ListItem } from './ListItem'
 
 //👇 We're importing the necessary stories from ListItem
-import { Selected, Unselected } from "./ListItem.stories";
+import { Selected, Unselected } from './ListItem.stories'
 
 const meta: Meta<typeof List> = {
   component: List,
-};
+}
 
-export default meta;
-type Story = StoryObj<typeof List>;
+export default meta
+type Story = StoryObj<typeof List>
 
 export const ManyItems: Story = {
   render: (args) => (
@@ -21,4 +21,4 @@ export const ManyItems: Story = {
       <ListItem {...Unselected.args} />
     </List>
   ),
-};
+}

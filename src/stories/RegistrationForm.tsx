@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 export const RegistrationForm = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
   const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    console.log("Email:", email);
-    console.log("Password:", password);
-  };
+    console.log('Email:', email)
+    console.log('Password:', password)
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -33,5 +33,5 @@ export const RegistrationForm = () => {
       </div>
       <button type="submit">Submit</button>
     </form>
-  );
-};
+  )
+}

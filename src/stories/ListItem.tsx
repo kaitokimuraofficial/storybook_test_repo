@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
 interface ListItemProps {
-  isSelected?: boolean;
-  label?: string;
+  isSelected?: boolean
+  label?: string
 }
 
 export const ListItem: React.FC<ListItemProps> = ({
@@ -10,8 +10,8 @@ export const ListItem: React.FC<ListItemProps> = ({
   label,
 }) => {
   return (
-    <li style={{ backgroundColor: isSelected ? "lightblue" : "transparent" }}>
+    <li style={{ backgroundColor: isSelected ? 'lightblue' : 'transparent' }}>
       {label}
     </li>
-  );
-};
+  )
+}

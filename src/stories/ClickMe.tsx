@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 export const ClickMe = () => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('')
 
   const handleClick = () => {
-    alert("Button clicked!");
-  };
+    alert('Button clicked!')
+  }
 
   return (
     <div>
@@ -20,10 +20,13 @@ export const ClickMe = () => {
         />
       </div>
       <div>
-        <button role="another-element" onClick={handleClick}>
+        <button
+          role="another-element"
+          onClick={handleClick}
+        >
           Click me
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

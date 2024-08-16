@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 export const Test = () => {
-  const [value1, setValue1] = useState("");
-  const [value2, setValue2] = useState("");
-  const [value3, setValue3] = useState("");
+  const [value1, setValue1] = useState('')
+  const [value2, setValue2] = useState('')
+  const [value3, setValue3] = useState('')
 
   return (
     <div>
@@ -35,5 +35,5 @@ export const Test = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}

@@ -1,1 +1,33 @@
+arrowParens: always
 printWidth: 80
+semi: false
+singleAttributePerLine: true
+singleQuote: true
+tabWidth: 2
+useTabs: false
+
+
+# Here are the default settings for Prettier:
+
+# printWidth: 80
+# tabWidth: 2
+# useTabs: false
+# semi: true
+# singleQuote: false
+# quoteProps: as-needed
+# jsxSingleQuote: false
+# trailingComma: none
+# bracketSpacing: true
+# jsxBracketSameLine: false
+# arrowParens: avoid
+# rangeStart: 0
+# rangeEnd: Infinity
+# parser: none
+# filepath: none
+# requirePragma: false
+# insertPragma: false
+# proseWrap: preserve
+# htmlWhitespaceSensitivity: css
+# vueIndentScriptAndStyle: false
+# endOfLine: auto
+# embeddedLanguageFormatting: auto

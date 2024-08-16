@@ -1,13 +1,13 @@
 interface Task {
-  id: number;
-  title: string;
-  state: string;
+  id: number
+  title: string
+  state: string
 }
 
 export interface PropsType {
-  task: Task;
-  onArchiveTask: (arg0: number) => void;
-  onPinTask: (arg0: number) => void;
+  task: Task
+  onArchiveTask: (arg0: number) => void
+  onPinTask: (arg0: number) => void
 }
 
 export default function Task({
@@ -27,12 +27,19 @@ export default function Task({
           disabled={true}
           name="checked"
           id={`archiveTask-${id}`}
-          checked={state === "TASK_ARCHIVED"}
+          checked={state === 'TASK_ARCHIVED'}
         />
-        <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
+        <span
+          className="checkbox-custom"
+          onClick={() => onArchiveTask(id)}
+        />
       </label>
 
-      <label htmlFor={`title-${id}`} aria-label={title} className="title">
+      <label
+        htmlFor={`title-${id}`}
+        aria-label={title}
+        className="title"
+      >
         <input
           type="text"
           value={title}
@@ -42,7 +49,7 @@ export default function Task({
           placeholder="Input title"
         />
       </label>
-      {state !== "TASK_ARCHIVED" && (
+      {state !== 'TASK_ARCHIVED' && (
         <button
           className="pin-button"
           onClick={() => onPinTask(id)}
@@ -54,5 +61,5 @@ export default function Task({
         </button>
       )}
     </div>
-  );
+  )
 }
