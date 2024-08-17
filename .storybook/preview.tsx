@@ -23,6 +23,8 @@ const preview: Preview = {
       },
     },
   },
+  // This component will have an automatically generated Autodocs entry
+  // https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
   decorators: [
     // 👇 Defining the decorator in the preview file applies it to all stories

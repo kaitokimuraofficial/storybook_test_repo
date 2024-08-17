@@ -1,5 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite'
 
+// https://storybook.js.org/docs/configure
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
 
@@ -18,12 +19,12 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
-
+  // https://storybook.js.org/docs/writing-docs/autodocs
   docs: {
-    //👇 See the table below for the list of supported options
-    defaultName: 'Hitation',
+    defaultName: 'Documentation',
   },
 
+  // https://storybook.js.org/docs/configure/integration/typescript
   typescript: {
     reactDocgen: 'react-docgen-typescript',
   },

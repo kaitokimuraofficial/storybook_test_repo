@@ -10,11 +10,11 @@ export interface PropsType {
   onPinTask: (arg0: number) => void
 }
 
-export default function Task({
+export const Task = ({
   task: { id, title, state },
   onArchiveTask,
   onPinTask,
-}: PropsType) {
+}: PropsType) => {
   return (
     <div className={`list-item ${state}`}>
       <label

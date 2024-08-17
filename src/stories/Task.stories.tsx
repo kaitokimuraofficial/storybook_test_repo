@@ -1,6 +1,6 @@
 import { fn } from '@storybook/test'
 
-import Task from './Task'
+import { Task } from './Task'
 
 export const ActionsData = {
   onArchiveTask: fn(),

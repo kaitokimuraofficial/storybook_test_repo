@@ -2,8 +2,6 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { List } from './List'
 import { ListItem } from './ListItem'
-
-//👇 We're importing the necessary stories from ListItem
 import { Selected, Unselected } from './ListItem.stories'
 
 const meta: Meta<typeof List> = {
