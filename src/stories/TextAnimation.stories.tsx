@@ -5,7 +5,6 @@ import { TextAnimation } from './TextAnimation'
 const meta = {
   title: 'Animation/TextAnimation',
   component: TextAnimation,
-  tags: ['autodocs'],
   args: {
     timeOut: 1500,
     str: 'TEXT ANIMATION',

@@ -26,7 +26,7 @@ const config: StorybookConfig = {
 
   // https://storybook.js.org/docs/configure/integration/typescript
   typescript: {
-    reactDocgen: 'react-docgen-typescript',
+    reactDocgen: 'react-docgen-typescript', // https://storybook.js.org/docs/api/main-config/main-config-typescript#reactdocgen
   },
 }
 export default config

@@ -1,12 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import { userEvent, within } from '@storybook/test'
 
 import { ClickMe } from './ClickMe'
 
-const meta: Meta<typeof ClickMe> = {
+const meta = {
   component: ClickMe,
-}
+} satisfies Meta<typeof ClickMe>
 
 export default meta
 type Story = StoryObj<typeof ClickMe>

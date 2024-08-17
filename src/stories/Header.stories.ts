@@ -6,9 +6,8 @@ import { Header } from './Header'
 const meta = {
   title: 'Example/Header',
   component: Header,
-  tags: ['autodocs', 'dev'],
+  tags: ['dev'],
   parameters: {
-    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
   loaders: [

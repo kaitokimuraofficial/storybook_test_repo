@@ -1,46 +1,51 @@
+import { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
 
 import { Task } from './Task'
 
-export const ActionsData = {
-  onArchiveTask: fn(),
-  onPinTask: fn(),
-}
-
-export default {
+const meta: Meta<typeof Task> = {
   component: Task,
   title: 'Task',
-  tags: ['autodocs'],
-  //👇 Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,
   args: {
-    ...ActionsData,
+    task: {
+      id: 1,
+      title: 'Test Task',
+      state: 'TASK_INBOX',
+    },
+    onArchiveTask: fn(),
+    onPinTask: fn(),
   },
 }
 
-export const Default = {
+export default meta
+type Story = StoryObj<typeof Task>
+
+export const Inbox: Story = {
   args: {
     task: {
-      id: '1',
-      title: 'Test Task',
+      id: 1,
+      title: 'Inbox Task',
       state: 'TASK_INBOX',
     },
   },
 }
 
-export const Pinned = {
+export const Pinned: Story = {
   args: {
     task: {
-      ...Default.args.task,
+      id: 2,
+      title: 'Pinned Task',
       state: 'TASK_PINNED',
     },
   },
 }
 
-export const Archived = {
+export const Archived: Story = {
   args: {
     task: {
-      ...Default.args.task,
+      id: 1,
+      title: 'Archived Task',
       state: 'TASK_ARCHIVED',
     },
   },
