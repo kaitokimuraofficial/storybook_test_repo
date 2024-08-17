@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc -b && vite build",
-    "build-storybook": "storybook build",
+    "bd": "tsc -b && vite build",
+    "bd-sb": "storybook build",
     "dev": "vite",
-    "preview": "vite preview",
-    "prettier": "prettier . --write",
-    "storybook": "storybook dev -p 6006"
+    "fmt": "prettier . --write",
+    "pvw": "vite preview",
+    "sb": "storybook dev -p 6006"
   },
   "dependencies": {
     "react": "18.3.1",
