@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 interface Prop {
   timeOut: number
-  str: String
+  str: string
   gap: number
 }
 
