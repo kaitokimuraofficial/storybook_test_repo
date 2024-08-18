@@ -3,7 +3,7 @@ import { fn } from '@storybook/test'
 import { Button } from './Button'
 
 const meta: Meta<typeof Button> = {
-  title: 'Example/Button',
+  title: 'Atoms/Button',
   component: Button,
   decorators: [
     (Story) => (

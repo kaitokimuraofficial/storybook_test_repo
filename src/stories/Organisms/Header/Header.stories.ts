@@ -4,9 +4,8 @@ import { fn } from '@storybook/test'
 import { Header } from './Header'
 
 const meta = {
-  title: 'Example/Header',
+  title: 'Organisms/Header',
   component: Header,
-  tags: ['dev'],
   parameters: {
     layout: 'fullscreen',
   },
