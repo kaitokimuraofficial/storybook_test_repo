@@ -1,23 +1,24 @@
-import styles from './textAnimation.module.css'
+import styles from './slide.module.css'
 import { useState, useEffect } from 'react'
 
 interface Prop {
+  delay: number
+  label: string
   timeOut: number
-  str: string
-  gap: number
 }
 
-export const TextAnimation = ({
+export const Slide = ({
+  delay = 0.06,
+  label = 'TEXT ANIMATION',
   timeOut = 1500,
-  str = 'TEXT ANIMATION',
-  gap = 0.06,
 }: Prop) => {
-  const arr = Array.from(str)
+  const arr = Array.from(label)
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setVisible(true)
+
       setTimeout(() => {
         setVisible(false)
       }, timeOut)
@@ -29,7 +30,7 @@ export const TextAnimation = ({
   return (
     <h1
       className={`${styles.title} ${visible ? styles.visible : ''}`}
-      style={{ '--gap': `${gap}s` } as React.CSSProperties}
+      style={{ '--delay': `${delay}s` } as React.CSSProperties}
     >
       {[...arr].map((value, index) => (
         <span

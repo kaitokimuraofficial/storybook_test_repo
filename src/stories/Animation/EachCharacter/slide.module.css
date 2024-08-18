@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 :root {
-  --gap: 0.06s;
+  --delay: 0.06s;
 }
 
 .title {
@@ -16,7 +16,7 @@
   display: block;
   transform: translate(0, 105%);
   transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transition-delay: calc(var(--gap) * (var(--i) - 1));
+  transition-delay: calc(var(--delay) * (var(--i) - 1));
 }
 
 .title.visible span {

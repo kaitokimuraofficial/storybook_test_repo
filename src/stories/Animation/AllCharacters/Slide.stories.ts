@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { TextAnimation } from './TextAnimation'
+import { Slide } from './Slide'
 
 const meta = {
-  title: 'Animation/TextAnimation',
-  component: TextAnimation,
+  title: 'Animation/SlideAllCharacters',
+  component: Slide,
   args: {
+    delay: 0.06,
+    label: 'TEXT ANIMATION',
     timeOut: 1500,
-    str: 'TEXT ANIMATION',
-    gap: 0.06,
   },
-} satisfies Meta<typeof TextAnimation>
+} satisfies Meta<typeof Slide>
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -21,7 +21,7 @@ export const Default: Story = {
 
 export const MyName: Story = {
   args: {
-    str: 'Kaito Kimura',
+    label: 'Kaito Kimura',
   },
 }
 
